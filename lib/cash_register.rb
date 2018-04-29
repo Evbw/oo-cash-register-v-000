@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 
 class CashRegister
@@ -39,4 +40,26 @@ class CashRegister
   def void_last_transaction 
     @total -= @last_transaction.to_f
   end
+=======
+class CashRegister
+  attr_accessor :total, :item, :quantity, :discount
+
+  def initialize(discount)
+    @total = 0
+    @discount = discount
+  end
+  
+  def apply_discount
+    
+  end
+  
+  def add_item
+    
+  end
+  
+  def void_last_transaction
+    @total -= last transaction
+  end
+  
+>>>>>>> 4e66c6801517f36a0ac8a73f1ca0afa039868797
 end
